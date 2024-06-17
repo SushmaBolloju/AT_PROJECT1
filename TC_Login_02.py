@@ -12,4 +12,7 @@ driver.find_element(By.XPATH,"//input[@placeholder='Username']").send_keys("Admi
 driver.find_element(By.XPATH,"//input[@placeholder='Password']").send_keys("Invalid password")
 login = driver.find_element(By.XPATH,"//button[@type='submit']").click()
 time.sleep(5)
+alert_text_element = driver.find_element(By.XPATH, '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/div/div[1]/div[1]/p')
+error_message = alert_text_element.text
+assert error_message == 'Invalid credentials'
 driver.quit()
