@@ -9,6 +9,7 @@ driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
 # original_window = driver.current_window_handle
 driver.maximize_window()
 time.sleep(3)
+
 driver.find_element(By.XPATH,"//input[@placeholder='Username']").send_keys("Admin")
 driver.find_element(By.XPATH,"//input[@placeholder='Password']").send_keys("admin123")
 login = driver.find_element(By.XPATH,"//button[@type='submit']").click()
