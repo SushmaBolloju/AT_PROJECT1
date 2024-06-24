@@ -62,7 +62,7 @@ class Orange:
        save.click()
        sleep(5)
 
-       # #Enter some more personal details inside the same module
+       # #Entering some more personal details inside the same module
        personal_detail = self.driver.find_element(By.XPATH,'//*[@id="app"]/div[1]/div[2]/div[2]/div/div/div/div[1]/div[2]/div[1]/a')
        personal_detail.click()
        sleep(5)
