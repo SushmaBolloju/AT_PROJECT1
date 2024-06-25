@@ -34,7 +34,7 @@ class Orange:
        username.send_keys("Admin")
        password=self.driver.find_element(By.XPATH,'//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input')
        #Passing password value
-       password.send_keys("Invalid password")
+       password.send_keys("India")
        login_button=self.driver.find_element(By.XPATH,'//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button')
        #Clicking on the login button
        login_button.click()
